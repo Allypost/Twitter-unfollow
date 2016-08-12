@@ -2,7 +2,7 @@
 Quick script to unfollow everyone you currently follow on Twitter
 
 ## How to use
-1. Copy the code from unfollow.min.js
+1. Copy the code from _unfollow.min.js_
 2. Go to your "Following" tab
 3. Open your browser's console
 4. Make sure you're on the console tab
