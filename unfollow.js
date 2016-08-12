@@ -20,7 +20,7 @@ function unfollowEverybody() {
     function goToElement($block, cb) {
         $block = $block || getLastBlock();
         
-        if(!$block || !$block.offset)
+        if(!$block || !$block.offset || !$block.offset())
             return;
     
         var options = {
