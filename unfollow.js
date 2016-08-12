@@ -31,7 +31,7 @@ function unfollowEverybody() {
     }
     
     var $buttons = getUnfollowButtons();
-    var $lastBlock = getLastBlock($b);
+    var $lastBlock = getLastBlock($buttons);
     
     $buttons.click();
     
