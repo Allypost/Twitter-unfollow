@@ -30,12 +30,14 @@ function unfollowEverybody() {
         $('html, body').animate(options, 500, cb);
     }
     
-    var $b = getUnfollowButtons();
-    var $l = getLastBlock($b);
+    var $buttons = getUnfollowButtons();
+    var $lastBlock = getLastBlock($b);
     
-    $b.click();
+    $buttons.click();
     
-    goToElement($l, function() {
+    goToElement($lastBlock, function() {
         setTimeout(unfollowEverybody, 1000);
     });
 }
+
+unfollowEverybody();
